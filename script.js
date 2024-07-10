@@ -41,7 +41,7 @@ const downloadImages = async () => {
   if (!fs.existsSync(imagesFolder)) {
     fs.mkdirSync(imagesFolder);
   }
-
+    console.log(images.length)
   for (let i = 0; i < images.length; i++) {
     const image = images[i];
 
